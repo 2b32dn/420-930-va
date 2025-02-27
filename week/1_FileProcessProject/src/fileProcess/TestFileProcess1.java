@@ -18,6 +18,7 @@ public class TestFileProcess1 {
       x = inFile.nextDouble();
       y = inFile.nextDouble();
 
+      // printf only works for console
       System.out.printf("x = %.2f, y = %.2f, Division is %.2f\n", x, y, x / y);
     }
     inFile.close();
