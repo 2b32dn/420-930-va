@@ -32,19 +32,19 @@ public class TestArrayList2 {
       System.out.println("");
     }
 
-    for (int i = 0; i < inFileArrayList.size(); i++) {
-      double x = inFileArrayList.get(i).getX();
-      double y = inFileArrayList.get(i).getY();
+    // for (int i = 0; i < inFileArrayList.size(); i++) {
+    // double x = inFileArrayList.get(i).getX();
+    // double y = inFileArrayList.get(i).getY();
 
-      System.out.printf("Addition: x = %.2f, y = %.2f is %s\n", x, y,
-          String.format("%.2f", inFileArrayList.get(i).calAdd()));
-      System.out.printf("Substraction: x = %.2f, y = %.2f is %s\n", x, y,
-          String.format("%.2f", inFileArrayList.get(i).calSubs()));
-      System.out.printf("Multiplication: x = %.2f, y = %.2f is %s\n", x, y,
-          String.format("%.2f", inFileArrayList.get(i).calDiv()));
-      System.out.printf("Division: x = %.2f, y = %.2f is %s\n\n", x, y,
-          String.format("%.2f", inFileArrayList.get(i).calProd()));
-    }
+    // System.out.printf("Addition: x = %.2f, y = %.2f is %s\n", x, y,
+    // String.format("%.2f", inFileArrayList.get(i).calAdd()));
+    // System.out.printf("Substraction: x = %.2f, y = %.2f is %s\n", x, y,
+    // String.format("%.2f", inFileArrayList.get(i).calSubs()));
+    // System.out.printf("Multiplication: x = %.2f, y = %.2f is %s\n", x, y,
+    // String.format("%.2f", inFileArrayList.get(i).calDiv()));
+    // System.out.printf("Division: x = %.2f, y = %.2f is %s\n\n", x, y,
+    // String.format("%.2f", inFileArrayList.get(i).calProd()));
+    // }
 
     inFile.close();
   }
