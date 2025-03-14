@@ -14,8 +14,8 @@ public class Billing {
   public Billing(double prd_Price, int prd_Qty, double fed_Tax, double prv_Tax) {
     this.prd_Price = prd_Price;
     this.prd_Qty = prd_Qty;
-    this.Fed_Tax = fed_Tax;
-    this.Prv_Tax = prv_Tax;
+    Fed_Tax = fed_Tax;
+    Prv_Tax = prv_Tax;
   }
 
   public double getPrd_Price() {

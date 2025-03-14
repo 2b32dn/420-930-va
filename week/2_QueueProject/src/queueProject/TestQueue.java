@@ -1,7 +1,5 @@
 package queueProject;
 
-import java.util.*;
-
 public class TestQueue {
   public static void main(String[] args) {
     // User-defined class
