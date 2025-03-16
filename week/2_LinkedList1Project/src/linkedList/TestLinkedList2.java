@@ -31,12 +31,12 @@ public class TestLinkedList2 {
       }
       currentNode = newNode;
     }
-    System.out.println("Traverse the linked list to print nodes of linked list: ");
+    System.out.println("Displaying the components of the linked list stored from user input: ");
     currentNode = headNode;
     while (currentNode != null) {
 
       // process the current
-      System.out.println(currentNode.info);
+      System.out.println("Value: " + currentNode.info);
       currentNode = currentNode.link;
     }
   }
