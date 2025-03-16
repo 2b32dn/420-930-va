@@ -10,7 +10,7 @@ public class Course {
   public Course() {
     this.course_id = "";
     this.course_name = "";
-    credits = 0;
+    credits = 3;
     this.max_enrollment = 0;
   }
 
