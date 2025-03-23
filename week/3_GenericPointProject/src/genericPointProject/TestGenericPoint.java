@@ -1,7 +1,5 @@
 package genericPointProject;
 
-import java.lang.reflect.Array;
-
 public class TestGenericPoint {
   public static void main(String[] args) {
     // Instantiate an object where its data attribute of type String

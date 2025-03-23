@@ -5,19 +5,19 @@ public class TestLinkedStack {
     // Call Methods: add, print...
     // LinkedListClass is USER-DEFINED Class
     LinkedListClass myClass = new LinkedListClass();
-    myClass.add(20);
+    myClass.add(10);
     myClass.add(15);
-    myClass.add(4);
+    myClass.add(20);
+    myClass.add(25);
     myClass.print();
 
     // Call Methods: push, peek, pop...
     // USER-DEFINED Class: StackClass
     StackClass myStack = new StackClass();
-    myStack.push(10);
-    myStack.push(20);
-    myStack.push(30);
     myStack.push(40);
     myStack.push(50);
+    myStack.push(60);
+    myStack.push(70);
 
     // System-defined Class: Stack in the Java Collection Framework
     // Stack myStack2 = new Stack(); Same concept as StackClass

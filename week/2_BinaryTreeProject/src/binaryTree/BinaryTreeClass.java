@@ -13,6 +13,7 @@ public class BinaryTreeClass {
     BinaryTreeNode newNodeTree = new BinaryTreeNode();
     newNodeTree.llink = null;
     newNodeTree.rlink = null;
+    newNodeTree.info = num;
 
     BinaryTreeNode currentNode;
     if (rootTree == null) {
@@ -62,6 +63,21 @@ public class BinaryTreeClass {
   // Traverse the tree
   // Recursive method to traverse the binary tree in order
 
+  // InOrder
+  public void inOrderTraversal() {
+    inOrder(rootTree);
+  }
+
+  private void inOrder(BinaryTreeNode oot) {
+    if (oot.llink != null) {
+      inOrder(oot.llink);
+    }
+    System.out.println("--------" + oot.info + "--------");
+    if (oot.rlink != null) {
+      inOrder(oot.rlink);
+    }
+  }
+
   // PreOrder
   public void preOrderTraversal() {
     preOrder(rootTree);
@@ -83,28 +99,12 @@ public class BinaryTreeClass {
   }
 
   private void postOrder(BinaryTreeNode oot) {
-
     if (oot.llink != null) {
-      preOrder(oot.llink);
+      postOrder(oot.llink);
     }
     if (oot.rlink != null) {
-      preOrder(oot.rlink);
+      postOrder(oot.rlink);
     }
     System.out.println("--------" + oot.info + "--------");
-  }
-
-  // InOrder
-  public void inOrderTraversal() {
-    inOrder(rootTree);
-  }
-
-  private void inOrder(BinaryTreeNode oot) {
-    if (oot.llink != null) {
-      inOrder(oot.llink);
-    }
-    System.out.println("--------" + oot.info + "--------");
-    if (oot.rlink != null) {
-      inOrder(oot.rlink);
-    }
   }
 }

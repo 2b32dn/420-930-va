@@ -52,4 +52,10 @@ public class Student {
   public void setRatePerhrs(double ratePerhrs) {
     this.ratePerhrs = ratePerhrs;
   }
+
+  public String toString() {
+    return String.format("[Student Id: %d, Student Full Name: %s, Hours: %d, Hourly Rate: %.2f]", std_Id,
+        std_FullName,
+        hrs, ratePerhrs);
+  }
 }
