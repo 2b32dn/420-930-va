@@ -1,4 +1,4 @@
-package collectionExamplesProject;
+package lambdaExpressionProject;
 
 public class Car {
   private String vin;

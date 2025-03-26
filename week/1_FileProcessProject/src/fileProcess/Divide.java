@@ -4,6 +4,11 @@ public class Divide {
   private double x;
   private double y;
 
+  public Divide() {
+    this.x = 0;
+    this.y = 0;
+  }
+
   public Divide(double x, double y) {
     this.x = x;
     this.y = y;
@@ -42,5 +47,9 @@ public class Divide {
 
   public double calProd() {
     return x * y;
+  }
+
+  public String toString() {
+    return String.format("[x=%.2f, y=%.2f]", x, y);
   }
 }

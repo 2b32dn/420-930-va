@@ -1,8 +1,11 @@
-package collectionExamplesProject;
+package lambdaExpressionProject;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
 
-public class TestHashMapCollection {
+public class TestCarHashMapLambdaExpression {
   public static void main(String[] args) {
     Map<String, Car> carHashMap = new HashMap<>();
 
@@ -36,5 +39,13 @@ public class TestHashMapCollection {
     for (Car car : carCollection) {
       System.out.println(car);
     }
+
+    System.out.println("Print all keys using lambda expression:");
+    carHashMap.forEach((key, value) -> {
+      System.out.println(key);
+    });
+    carHashMap.forEach((key, value) -> {
+      System.out.println(value);
+    });
   }
 }

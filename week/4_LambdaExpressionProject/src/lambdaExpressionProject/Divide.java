@@ -1,4 +1,4 @@
-package collectionExamplesProject;
+package lambdaExpressionProject;
 
 public class Divide {
   private double x;
@@ -51,5 +51,9 @@ public class Divide {
 
   public String toString() {
     return String.format("[x=%.2f, y=%.2f]", x, y);
+  }
+
+  public void calculateDivision() {
+    System.out.println(x / y);
   }
 }

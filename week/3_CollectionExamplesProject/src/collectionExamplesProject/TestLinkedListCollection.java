@@ -1,8 +1,6 @@
 package collectionExamplesProject;
 
-import java.util.List;
-import java.util.ListIterator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class TestLinkedListCollection {
   public static void main(String[] args) {
@@ -21,13 +19,15 @@ public class TestLinkedListCollection {
     }
 
     // Reading loaded LinkedList nameList
-    System.out.println("Printing Elements of nameList using a For-Loop");
+    System.out.println("");
+    System.out.println("Printing Elements of nameList using get()");
     for (index = 0; index < nameList.size(); index++) {
       System.out.println(nameList.get(index));
     }
 
     // Reading LinkedList traversal using ListIterator
-    System.out.println("Printing Elements of LinkedList Using ListIterator: ");
+    System.out.println("");
+    System.out.println("Printing Elements of LinkedList Using Iterator: ");
     ListIterator<String> myListIterator = nameList.listIterator();
     String strEle;
     while (myListIterator.hasNext()) {
@@ -38,6 +38,8 @@ public class TestLinkedListCollection {
       System.out.println(strEle);
     }
 
+    // Forward
+    System.out.println("");
     System.out.println("Printing Elements of LinkedList Using in Forward: ");
     myListIterator = nameList.listIterator();
     while (myListIterator.hasNext()) {
@@ -45,8 +47,26 @@ public class TestLinkedListCollection {
       System.out.println(strEle);
     }
 
+    // Backward
+    System.out.println("");
     System.out.println("Printing Elements of LinkedList Using Backward: ");
-    myListIterator = nameList.listIterator();
+
+    // You are initializing myListIterator again using nameList.listIterator();,
+    // which positions the iterator at the beginning of the list.
+
+    // The method hasPrevious() will return false at this point because the iterator
+    // is at the start of the list, meaning there's no previous element to traverse.
+
+    // Since the condition myListIterator.hasPrevious() is never true, the loop
+    // doesn't execute.
+
+    // To traverse backward, you need to first move the iterator to the end of the
+    // list using while (myListIterator.hasNext()) { myListIterator.next(); } before
+    // starting the backward iteration.
+
+    while (myListIterator.hasNext()) {
+      myListIterator.next();
+    }
     while (myListIterator.hasPrevious()) {
       strEle = myListIterator.previous();
       System.out.println(strEle);
