@@ -2,7 +2,6 @@ package streamProcessingProject;
 
 import java.util.*;
 import java.io.*;
-import java.net.CookieHandler;
 
 public class TestStreamDivideProcessing {
   public static void main(String[] args) throws IOException {
@@ -11,6 +10,7 @@ public class TestStreamDivideProcessing {
     while (inputFile.hasNext()) {
       divideSet.add(new Divide(inputFile.nextDouble(), inputFile.nextDouble()));
     }
+    inputFile.close();
 
     divideSet.forEach(n -> {
       System.out.println(n);

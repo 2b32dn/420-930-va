@@ -41,6 +41,6 @@ public class TestStreamNumberProcessing {
     System.out.println("\nUsing sorted(reverseOrder()), Number of elements sorted:");
     numberList.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
-    int comp = Double.compare(9, 9);
+    // int comp = Double.compare(9, 9);
   }
 }

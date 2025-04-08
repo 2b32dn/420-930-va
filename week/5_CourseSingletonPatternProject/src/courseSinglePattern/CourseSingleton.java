@@ -31,4 +31,13 @@ public class CourseSingleton {
   public List<Course> getCourses() {
     return courseList;
   }
+
+  // Report 1
+  // Iterate over collection(s)
+
+  // Report 2
+  // Iterate over collection(s)
+
+  // Report 3
+  // Iterate over collection(s)
 }
